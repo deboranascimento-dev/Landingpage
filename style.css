@@ -366,7 +366,7 @@ h3 {
     max-width: 250px;
 
     background-color: var(--color-primary-2);
-    background-image: url(/img/bg-about.png);
+    background-image: url(../img/bg-about.png);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
