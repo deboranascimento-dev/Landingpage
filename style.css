@@ -59,10 +59,6 @@ a {
     }
 }
 
-
-
-
-
 .logo {
     width: 250px;
 }
@@ -137,7 +133,6 @@ header {
 
 
 
-
 /*     HOME     */
 
 .itens_home img {
@@ -203,18 +198,15 @@ span {
 
 }
 
-
-
-
 .itens-home{
     width:min(220vw, 500px)
 }
 
- 
 
 /*    TRENDING     */
 
-.trending {
+
+#trending {
     padding: 12px 4px;
     display: flex;
     flex-direction: column;
@@ -422,6 +414,7 @@ footer p {
     font-size: 1rem;
 }
 
+/* MEDIA DO ABOUT */
 
 @media (min-width: 769px) {
 
@@ -437,6 +430,7 @@ footer p {
         
         
         /* grid */
+
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
@@ -448,6 +442,7 @@ footer p {
     }
 }
 
+/* MEDIA DO HEADER*/
 
 @media (min-width: 769px) {
     header {
@@ -481,11 +476,13 @@ footer p {
 
 }
 
+
+/* MEDIA DA TRNDING */
       
 }
 
 @media (min-width:769px) {
-    .trending{
+    #trending{
         display: flex;
         align-items: center;
         flex-direction: row;
