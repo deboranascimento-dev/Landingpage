@@ -1,2 +1,2 @@
 # Landingpage
-Lange page de uma cafeteria 
+Landing page de uma cafeteria. 
