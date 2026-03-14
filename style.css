@@ -66,6 +66,9 @@ a {
 
 
 /*     HEARD       */
+#container {
+    background-color: #fff4b4;
+}
 
 header {
     width: 100%;
@@ -155,7 +158,7 @@ header {
 }
 
 #container {
-    margin-top: 150px;
+    margin-top:130px;
 }
 
 
@@ -229,13 +232,13 @@ span {
 }
 
 .trending-rate {
-    background-color: rgb(121, 95, 69);
+    /* background-color: rgb(121, 95, 69); */
     display: inline-block;
     border-radius: 5px;
     padding: 5px;
 
     p {
-        color: #fbe309;
+        color: #000000;
         font-size: clamp(14px, 3vw, 20px);
     }
 }
@@ -334,11 +337,12 @@ h3 {
     gap: 20px;
     padding: 40px 15px;
     background-color: var(--color-neutro-0);
+    background-color: #fff4b4;
 }
 
 .title {
     font-size: clamp(1.6rem, 3vw, 1.5rem);
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     color: var(--color-primary-3);
     text-transform: uppercase;
@@ -503,6 +507,7 @@ footer p {
 
     .product-car{
         width: 100px;
+        background-image: url(/img/bg-about.png);
     }
 
 
