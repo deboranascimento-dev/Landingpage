@@ -221,7 +221,7 @@ span {
 
 .trending-card {
     margin-bottom: 55px;
-    transition: transform 0.3s ease;
+    transition:0.3s ease;
     img {
         width: clamp(160px, 20vw, 320px);
         border-radius: 12px;
@@ -330,8 +330,8 @@ h3 {
 /* Produtos  */
 
 
-#preducts {
-    display: flex;
+#products {
+ display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -495,7 +495,9 @@ footer p {
         width:120px;
     }
 }
- /*product */
+ 
+/*product */
+
 @media (min-width: 769px) {
     .products-cards {
         display: grid;
