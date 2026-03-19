@@ -2,9 +2,66 @@ const btnmobile = document.querySelector(".btn-mobile");
 const navlinks = document.getElementById("nav_links");
 const icon = document.querySelector(".btn-mobile i");
 
-btnmobile.addEventListener("click",() => {
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+const items = document.querySelectorAll('.item');
+const dots = document.querySelectorAll('.dot');
+const numberIndicator = document.querySelector('.numbers');
+const homeSection = document.getElementById('home');
+
+btnmobile.addEventListener("click", () => {
     navlinks.classList.toggle('show');
     icon.classList.toggle('fa-times');
-    icon.classList.toggle('fa-bars')
-    
+    icon.classList.toggle('fa-bars');
+});
+
+let active = 0;
+const total = items.length;
+let timer;
+
+function update(direction) {
+   document.querySelector('.item.active').classList.remove('active')
+   document.querySelector('.dot.active').classList.remove('active')
+
+   if(direction > 0){
+    active = active + 1
+
+    if( active === total){
+        active = 0
+    }
+
+   }
+
+   else if(direction < 0){
+    active = active -1
+
+    if(active < 0){
+        active = total -1
+    }
+
+
+   }
+
+   items[active].classList.add('active')
+   dots[active].classList.add('active')
+
+   numberIndicator.textContent = String(active +1).padStart(2, '0')
+ 
+
+
+}
+
+clearInterval(timer)
+ timer = setInterval(() => {
+    update(1)
+}, 5000);
+
+
+
+prevButton.addEventListener('click', () => {
+    update(-1)
+});
+
+nextButton.addEventListener('click', () => {
+   update(1)
 });
