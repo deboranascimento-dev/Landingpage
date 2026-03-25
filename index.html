@@ -1,337 +1,316 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Brew House</title>
-    <link rel="icon" href="img/logo.PNG" sizes="64x64" type="img.png ">
+    <link rel="icon" href="img/logo.PNG" sizes="64x64" type="img.png " />
+  </head>
+  <body>
 
-</head>
-<body>
     <!-- HEADE -->
+
     <header>
-        <nav class="nav_bar">
-            <img src="img/logo.PNG" alt="logo da cafeteria" class="logo">
-        
+      <nav class="nav_bar">
+        <img src="img/logo.PNG" alt="logo da cafeteria" class="logo" />
 
-            <buttom class="btn btn-mobile">
-                <i class="fa-solid fa-bars"><p></p></i>
-            </buttom>
+        <button class="btn btn-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
-            <ul id="nav_links" class=""> 
-        
-                <li>
-                    <a href="#home" class="homeclick">Home</a>
-                </li>
+        <ul id="nav_links" class="">
+          <li>
+            <a href="#home" class="homeclick">Home</a>
+          </li>
 
-                <li>
-                    <a href="#trending">Em alta</a>
-                </li>
+          <li>
+            <a href="#trending">Em alta</a>
+          </li>
 
-                 <li>
-                    <a href="#about">Sobre nós</a>
-                </li>
+          <li>
+            <a href="#about">Sobre nós</a>
+          </li>
 
-                 <li>
-                    <a href="#products">Produtos</a>
-                </li>
-            </ul>
-
-        </nav>
+          <li>
+            <a href="#products">Produtos</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    
-    
-    <!-- MAIN HOME-->  
-     
-    
+
+    <!-- MAIN HOME-->
+
     <main id="container">
-       
-        
-        <section id="home">
+      <section id="home">
+        <h1 class="home_title">
+          Conheça nossos cafés, chocolates e muito mais,
+          <span>experiência.</span>
+        </h1>
 
-            <h1 class="home_title">Conheça nossos cafés, chocolates e muito mais,
-                <span>experiência.</span>
-            </h1>
-
-            <div class="itens_home">
-            
-             
-                <div class="item active">
-
-                    <div class="home-img">
-                      <img src="./img/cofeegrao.png" alt="café">
-                    </div>
-   
-                    <div class="content">
-   
-                       <p class="content-description">Variacões de Cafés</p>
-   
-                        <p class="content-text">
-                           Ex.forte, tradicional, superior, gourmet, especial e Arábico.
-                        </p>
-   
-                       <button class="btn">Saiba Mais</button>
-   
-                    </div>
-               </div>
-
-                <div class="item">
-
-                    <div class="home-img">
-                        <img src="./img/cfrefesh.png" alt="café mocha">
-                    </div>
-    
-                    <div class="content">
-    
-                        <p class="content-description">Café mocha</p>
-    
-                        <p class="content-text">
-                            Clássico com  calda de Chocolate, chocolate branco,  gelado,  frapuccino.
-                        </p>
-    
-                        <button class="btn">Saiba Mais</button>
-                    </div>
-                </div> 
-
-                <div class="item">
-
-                    <div class="home-img">
-                       <img src="./img/mocha(1).png" alt="chocolate quente">
-                    </div>
-   
-                    <div class="content">
-   
-                       <p class="content-description">Chocolate quente</p>
-   
-                       <p class="content-text">
-                           Clássico ao cremoso , chocolate tradicional, meio amargo, chocolate branco, doce de leite ou Ninho.
-                       </p>
-   
-                       <button class="btn">Saiba Mais</button>
-                   </div>
-               </div>
-
+        <div class="itens_home">
+          <div class="item active">
+            <!-- 1 -->
+            <div class="home-img">
+              <img src="./img/cofeegrao.png" alt="café" />
             </div>
 
-            <div class="arrow">
-                <button class="arrow-btn" id="prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                      <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                    </svg>
+            <div class="content">
+              <p class="content-description">Variacões de Cafés</p>
 
-                </button>
-                   
+              <p class="content-text">
+                Ex.forte, tradicional, superior, gourmet, especial e Arábico.
+              </p>
 
-                <button class="arrow-btn" id="next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                     <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                    </svg>
-                </button>
+              <button class="btn-slide">Saiba Mais</button>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="home-img">
+              <img src="./img/cfrefesh.png" alt="café mocha" />
             </div>
 
-            <div class="indicadores">
-                <div class="numbers">01</div>
-                <div class="dots">
-                    <div class="dot active"></div>
-                    <div  class="dot"></div>
-                    <div  class="dot"></div>
-                </div>
+            <div class="content">
+              <p class="content-description">Café mocha</p>
 
+              <p class="content-text">
+                Clássico com calda de Chocolate, chocolate branco, gelado,
+                frapuccino.
+              </p>
+
+              <button class="btn-slide">Saiba Mais</button>
             </div>
-            
-        
-        </section>
+          </div>
 
-        <!-- trending -->
-
-        
-
-    <section id="trending">
-       
-        
-
-        <div class="trending-card">
-            <div class="trending-card">
-            <img src="img/gotascho.png" alt="drinks">
-
-            <div class="trending-rate">
-                <p>
-                    5 <i class="fa-solid fa-star"></i>
-                </p>
+          <div class="item">
+            <div class="home-img">
+              <img src="./img/mocha(1).png" alt="chocolate quente" />
             </div>
-            <div class="trending-description">
-                <p>
-                    Gotacho biscoito de café.
-                </p>
+
+            <div class="content">
+              <p class="content-description">Chocolate quente</p>
+
+              <p class="content-text">
+                Clássico ao cremoso , variacões de chocolate, doce de leite e
+                Ninho.
+              </p>
+
+              <button class="btn-slide">Saiba Mais</button>
             </div>
-            </div>
+          </div>
         </div>
 
-         <div class="trending-card">
-            <div class="trending-card">
-            <img src="./img/coffepistach.png" alt="drinks">
+        <div class="arrow">
+          <button class="arrow-btn" id="prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-left-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+              />
+            </svg>
+          </button>
+
+          <button class="arrow-btn" id="next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="indicadores">
+          <div class="numbers">01</div>
+          <div class="dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- trending -->
+    
+      <section id="trending">
+        <h2 class="title_tranding">em alta</h2>
+        <div class="trandind_porduct-emalta">
+          <div class="trending-card">
+          <div class="trending-card">
+            <img src="img/gotascho.png" alt="drinks" />
 
             <div class="trending-rate">
-                <p>
-                    5 <i class="fa-solid fa-star"></i>
-                </p>
+              <p>5 <i class="fa-solid fa-star"></i></p>
             </div>
             <div class="trending-description">
-                <p>
-                    Gelato com leite Pistach.
-                </p>
+              <p>Gotacho biscoito de café.</p>
             </div>
-            </div>
+          </div>
         </div>
 
         <div class="trending-card">
-            <div class="trending-card">
-              <img src="./img/milkcoffe.png" alt="drinks">
+          <div class="trending-card">
+            <img src="./img/coffepistach.png" alt="drinks" />
 
             <div class="trending-rate">
-                <p >
-                    5 <i class="fa-solid fa-star"></i>
-                </p>
-              </div>
+              <p>5 <i class="fa-solid fa-star"></i></p>
+            </div>
             <div class="trending-description">
-                <p>
-                    ice creem and coffe.
-                </p>
+              <p>Gelato com leite Pistach.</p>
             </div>
-            </div>
+          </div>
         </div>
-    </section>
 
-           <!-- ABOUT -->
+        <div class="trending-card">
+          <div class="trending-card">
+            <img src="./img/milkcoffe.png" alt="drinks" />
 
-    <section id="about">
-       <h2 class="about_title"> 
-         Sobre nós
-       </h2>
+            <div class="trending-rate">
+              <p>5 <i class="fa-solid fa-star"></i></p>
+            </div>
+            <div class="trending-description">
+              <p>ice creem and coffe.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      </section>
+
+      <!-- ABOUT -->
+
+      <section id="about">
+        <h2 class="about_title">Sobre nós</h2>
 
         <div class="about-content">
-
-          <img src="img/cafeebrew.png" alt="sobre nós " class="about-img">
+          <img src="img/cafeebrew.png" alt="sobre nós " class="about-img" />
 
           <div class="about-info">
-            <h3>
-                Nossa <span>História</span> 
-            </h3>
+            <h3>Nossa <span>História</span></h3>
             <p>
-                Nossa cafeteria nasceu do desejo de transforma café em experiência.
-                Acreditamos que cada xícara carrega mais do que sabor, carrega encontros, pausas e momentos especiais.
-                Selecionamos cada grão com cuidado e preparamos com carinho, para que você se sinta acolhido desde o primeiro gole.
-                porque, para nós, grandes historias começam com um simples café.
+              Nossa cafeteria nasceu do desejo de transforma café em
+              experiência. Acreditamos que cada xícara carrega mais do que
+              sabor: carrega encontros, pausas e momentos especiais.
+              Selecionamos cada grão com cuidado e preparamos com carinho, para
+              que você se sinta acolhido desde o primeiro gole, porque, para
+              nós, grandes historias começam com um simples café.
             </p>
           </div>
 
           <div class="about-info">
-            <h3>
-                Nosso <span>Propósito</span> 
-            </h3>
+            <h3>Nosso <span>Propósito</span></h3>
             <p>
-                Transformar cada xícara de café em um momento de aconchego, conexão e inspiração.
-                contendo memorias boas de momentos unicos com quem ama, 
-                dividindo não só um café da manha ou um chá da tarde, mais tarnsformando seus momentos em lembranças
-                para ficar para sempre no seu coração.
-
+              Transformar cada xícara de café em um momento de aconchego,
+              conexão e inspiração, contendo memórias boas de momentos únicos
+              com quem ama, Família, amigos, encontros ou trabalho. Não é apenas
+              um café da manhâ ou um chá da tarde, mas sim a transformação dos
+              seus momentos em lembranças que ficarão para sempre no seu
+              coração.
             </p>
           </div>
+        </div>
+      </section>
 
+      <!--    Produtos   -->
 
-         </div>
-
-
-    </section>
-
-       <!--    Produtos   -->
-
-    <section id="products">
-        <h2 class="title">
-            Produtos
-        </h2>
+      <section id="products">
+        <h2 class="title_products">Produtos</h2>
 
         <div class="products-cards">
-        
-            <div class="product-card">
-                <img src="./img/sonhos.png" alt="pão de sonho">
-                <div class="product-content">
-                    <h3>Pão de Sonho</h3>
-                </div> 
+          <div class="product-card">
+            <img src="./img/sonhos.png" alt="pão de sonho" />
+            <div class="product-content">
+              <h3>Pão de Sonho</h3>
             </div>
+          </div>
 
-            <div class="product-card">
-                <img src="./img/Sem título (7).png" alt="brownie">
-                <div class="product-content">
-                    <h3>Variações de Brownie´s</h3>
-                </div> 
+          <div class="product-card">
+            <img src="./img/Sem título (7).png" alt="brownie" />
+            <div class="product-content">
+              <h3>Brownie´s</h3>
             </div>
+          </div>
 
-            <div class="product-card">
-                <img src="./img/Sem título (3).png" alt="bolo">
-                <div class="product-content">
-                    <h3>Sabores de Bolos</h3>
-                </div> 
+          <div class="product-card">
+            <img src="./img/Sem título (3).png" alt="bolo" />
+            <div class="product-content">
+              <h3>Sabores de Bolos</h3>
             </div>
+          </div>
 
-
-         <div class="product-card">
-                <img src="./img/croassant.png" alt="pão de sonho">
-                <div class="product-content">
-                    <h3>Croassantes  folhados</h3>
-                </div> 
+          <div class="product-card">
+            <img src="./img/croassant.png" alt="pão de sonho" />
+            <div class="product-content">
+              <h3>Croassantes</h3>
             </div>
+          </div>
 
-            <div class="product-card">
-                <img src="./img/Sem título (6).png" alt="brownie">
-                <div class="product-content">
-                    <h3>Sanduíches Saborosos</h3>
-                </div> 
+          <div class="product-card">
+            <img src="./img/Sem título (6).png" alt="brownie" />
+            <div class="product-content">
+              <h3>Sanduíches</h3>
             </div>
+          </div>
 
-            <div class="product-card">
-                <img src="./img/wreapper.png" alt="bolo">
-                <div class="product-content">
-                    <h3> Comidas Saudáveis</h3>
-                </div> 
+          <div class="product-card">
+            <img src="./img/wreapper.png" alt="bolo" />
+            <div class="product-content">
+              <h3>Comidas Saudáveis</h3>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
 
-    
     <!-- FOOTER -->
-     <footer >
+    <footer>
+      <div class="info-add">
+        <ul class="list-info">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+              instagram
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-brands fa-linkedin"></i> faça parte do nosso grupo</a>
+          </li>
+        </ul>
+      </div>
+      <p>
+        copyright 2026
+        <i class="fa-regular fa-copyright"></i>
+        Feito por Débora Nascimento
+      </p>
+    </footer>
 
-        <div class="info-add">
-            <ul class="list-info">
-                <li>
-                    <a href="#">
-                     <i class="fa-brands  fa-instagram"></i>
-                     instagram
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                     <i class="fa-brands  fa-facebook"></i>
-                     Facebook
-                    </a>
-                </li>
-                <li>
-                   <a href="#"><i class="fa-brands  fa-linkedin"></i>
-                    faça parte do nosso grupo</a>
-                </li>
-            </ul>
-        </div>
-        <p>copyright 2026
-            <i class="fa-regular fa-copyright"></i>
-            Feito por Débora Nascimento
-        </p>
-        
-     </footer>
-     
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

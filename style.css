@@ -3,14 +3,19 @@
 :root {
     --color-neutro-0:#fff;
     --color-neutro-1:#6a3608da;
-
     --color-primary-1:#9e6b31;
     --color-primary-2:#e2a24d;
     --color-primary-3:#130e06;
+    --color-titles-4:#5a3008ee;
+
+    --z-header: 100;
+    --z-slide-btn:90;
+    --z-slide-item:80;
+    
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,6 +27,7 @@ a {
     text-decoration: none;
 }
 
+/*  BOTAO DO MOBILE */
 
 .btn {
     padding: 8px 20px;
@@ -46,22 +52,20 @@ a {
 
 
 
-/*     HEARD       */
+/*     HEADER   */
 
-
-#container {
-
-}
 
 header {
     width: 100%;
     background-color: var(--color-neutro-1);
     padding: 20px 4px;
     position: fixed;
-    z-index: 2;
+    z-index: var(--z-header);
     top:0;
     width: 100%;
     
+    
+
 
     .nav_bar {
         display: flex;
@@ -119,8 +123,17 @@ header {
 }
 
 
+/*espaco do scroll */
+section {
+    scroll-margin-top: 150px;
+}
+
 
 /*     HOME     */
+
+#home {
+    margin-top: 40%;
+}
 
 .itens_home{
     display: flex;
@@ -131,11 +144,15 @@ header {
 }
 
 
+
 .home_title {
     text-align: center;
     color: var(--color-primary-3);
     font-size: clamp(1.2rem, 4vw, 2rem);
     line-height: 1.4;
+    text-transform: uppercase;
+    margin: 50px;
+    
 }
 
 span {
@@ -150,15 +167,17 @@ span {
  #container {
     position: relative;
     overflow: hidden;
-    margin-top: 30%;
+    margin-top:10px;
+    
+
 }
 
 .itens_home {
     width: 100%;
-    min-height: 420px;
+    min-height: 300px;
     margin: 10px auto;
     position: relative;
-    margin-top: 10px;
+    margin-top: 1%;
 }
 
 .item {
@@ -172,8 +191,9 @@ span {
 
 }
 
-.active{
+.active {
     opacity: 1;
+    z-index: var(--z-slide-item);
 
 } 
 
@@ -189,20 +209,21 @@ span {
 .content-description {
     font-size: 1.1rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-neutro-1);
     letter-spacing: 1px;
     margin-bottom: 8px;
 }
+
 .content-text {
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.5;
     max-width: 520px;
 }
 
-.content .btn {
+.btn-slide {
  cursor: pointer;
  padding: 12px 10px;
  border-radius: 30px;
@@ -213,25 +234,29 @@ span {
  border: none;
 
 }
-.content .btn:hover {
-    background-color: var(--color-neutro-1);
-    color: var(--color-primary-3);
+
+.btn-slide:hover {
+    background-color: var(--color-neutro-1)
 }
+
 .arrow {
     position: absolute;
-    top: 10%;
+    top: 400px;
     left: 0;
     width: 100%;
+
+    /* DISPLAY FLEX */
+     
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     transform: translateY(-50%);
-    z-index: 1;
+    z-index: var(--z-slide-btn);
 }
 
 .arrow-btn {
-    border: 1px solid #b0a992;
+    border: 1px solid #c0b9a2;
     background: #fff;
-    padding: 0.65rem 0.9rem;
+    padding: 0.60rem 0.5rem;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.2s ease;
@@ -239,7 +264,8 @@ span {
 
 .arrow-btn:hover {
     transform: translateY(-2px);
-    background: #f5f5f5;
+    background: #7e3b04de;
+    
 }
 
 #prev {
@@ -285,8 +311,17 @@ span {
 
 /*    TRENDING     */
 
+.title_tranding {
+    font-size: clamp(1.9rem, 3vw, 1.5rem);
+    font-weight: 800;
+    text-align: center;
+    color: var(--color-titles-4);
+    text-transform: uppercase;
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
 
-#trending {
+.trandind_porduct-emalta {
     padding: 12px 4px;
     display: flex;
     flex-direction: column;
@@ -294,7 +329,7 @@ span {
     align-items: center;
     gap: 12px;
     min-height: auto;
-    margin-top: 40px;
+    margin-top:20%;
 }
 
 .trending-card {
@@ -320,12 +355,14 @@ span {
     }
 }
 
-.title-trending{
+.title-trending {
+    color: var(--color-neutro-1);
    font-weight:700 ;
    text-align: center;
    font-size: clamp(1.1rem, 3vw, 1.5rem);
    text-transform: uppercase;
-    margin: 1rem 0;
+    margin: 6rem 0;
+;
 }
 
 .trending-description {
@@ -405,9 +442,10 @@ h3 {
 
     background-color: var(--color-neutro-1);
     background-image: url(./img/bg-about.png);
-    padding: 32px 4px;
+    padding: 11px 4px;
     border-radius: 30px;
-    min-width: 90%;
+    min-width: 50%; 
+    margin: 2%;
     
 }
 
@@ -415,34 +453,37 @@ h3 {
 
 
 #products {
- display: flex;
+    
+    display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
     padding: 40px 15px;
     background-color: var(--color-neutro-0);
-    /* background-color: #f7efc5; */
+
 }
 
-.title {
+.title_products {
     font-size: clamp(1.6rem, 3vw, 1.5rem);
     font-weight: 800;
     text-align: center;
-    color: var(--color-primary-3);
+    color: var(--color-titles-4);
     text-transform: uppercase;
     margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .products-cards {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
 }
 
 .product-card {
+    /* height: 100px; */
 
-    width: 200%;
+    width: 240%;
     max-width: 250px;
 
     background-color: var(--color-primary-2);
@@ -486,7 +527,7 @@ h3 {
     font-size: clamp(1rem, 2vw, 1.1rem);
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--color-neutro-1);
+    color: var(--color-titles-4);
     margin: 0;
     
 
@@ -494,6 +535,7 @@ h3 {
 
 
 /*FOOTER*/
+
 
 .info-add a {
     color: var(--color-neutro-0);
@@ -506,39 +548,56 @@ footer {
     padding: 12px;
 
 }
+
+
 footer p {
     font-size: 1rem;
 }
 
+/*media do home slides*/
+
 @media (min-width:769px) {
-    .itens_home {
-        margin-bottom:10%;
+    #home {
+        margin-top: 10px;
+        margin: 5%;
+    
     }
     .item img {
         width: 300px;
     }
     #container {
-        margin-top: 20%;
+        margin-top: 15%;
+        scroll-margin-top: 200px;
         
     }
-    .arrow{
-        margin-top: 1px;
+    .arrow {
+        top: 200px;
     }
+    .content-text {
+        font-size: 1.4rem;
+    }
+    .btn-slide {
+         width:50%;
+    }
+
+
+
 }
 
 /* MEDIA DO ABOUT */
 
+
+
 @media (min-width: 769px) {
 
        #about {
-        margin-top: 50px;
+        margin-top: 10px;
     
     }
     .about_title {
         font-size: 2rem;
     }
     #about .about-content {
-        
         
         /* grid */
 
@@ -549,7 +608,7 @@ footer p {
     }
    
     .about-img {
-        margin-right: 30px;
+        margin-left: 100px;
     }
 }
 
@@ -586,28 +645,35 @@ footer p {
 }
 
 @media (min-width:769px) {
-    #trending{
+    .trandind_porduct-emalta{
+        margin-top: 10%;
         display: flex;
         align-items: center;
         flex-direction: row;
     }
     .trending-card img {
-        width:120px;
+        width:150px;
     }
     
 }
+
+
 /*product */
 
 @media (min-width: 769px) {
     .products-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 80px;
+        gap:50px;
         padding-bottom: 60px;
+        min-width: 250px;
     
     }
 
     .product-card {
+        width: 100%;
+        min-width: 250px;
+        padding: 100px, 100;
     
         background-image: url(./img/bg-about.png);
        
